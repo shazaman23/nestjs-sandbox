@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "name": "NestJS Test Debugger",
+            "request": "launch",
+            "program": "${workspaceFolder}/interviews/node_modules/.bin/jest",
+            "args": [
+                "--runInBand",
+                "--watchAll=false",
+            ],
+            "cwd": "${workspaceFolder}/interviews",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "windows": {
+                "program": "${workspaceFolder}/interviews/node_modules/jest/bin/jest"
+            }
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach Debugger to Nest App",
+            "port": 9229,
+            "address": "localhost"
+        }
+    ]
+}
