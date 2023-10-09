@@ -15,4 +15,14 @@ describe('AppService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  describe('Run interview logic', () => {
+    
+    it('should return a string', () => { // Feel free to remove me or change me, I'm just an example
+      expect(typeof(service.runInterviewLogic())).toEqual('string');
+    });
+
+    // TODO: Add more tests here
+    
+  });
 });
